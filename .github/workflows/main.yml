@@ -1,12 +1,11 @@
-name: Build the docker image
+name: First GitHub Actions Workflow
 
 on:
   push:
-    branches: [main]
-
 
 jobs:
-  build-and-push-image:
-    runs-on: unbuntu-latest
-    
-  
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "This is my first GitHub Actions Workflow"
